@@ -2,32 +2,67 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ROMAN.DEV</title>
 <style>
-*{margin:0;box-sizing:border-box;font-family:monospace}
-body{background:#0a0a0a;color:#fff;text-align:center;padding:30px 15px}
-img.logo{width:300px;border-radius:20px;box-shadow:0 0 40px #3ff6e0;display:block;margin:20px auto}
-h1{color:#3ff6e0;font-size:60px}
-.btn{background:#3ff6e0;color:#000;padding:12px 25px;border-radius:30px;border:0;font-weight:900;margin:20px auto;display:block}
-.card{background:#141414;border:1px solid #222;padding:15px;border-radius:12px;margin:15px 0;text-align:left}
-.tag{border:1px solid #333;background:#111;color:#3ff6e0;font-size:10px;padding:5px 10px;border-radius:6px;margin:3px;display:inline-block}
+body{background:#0a0a0a;color:#fff;font-family:monospace;text-align:center;padding:20px;margin:0}
+.logo-box{border:1px solid #5eead4;border-radius:25px;padding:10px;box-shadow:0 0 20px #5eead455;max-width:400px;margin:auto;background:#000}
+.logo-box img{width:100%;border-radius:20px}
+h1{color:#5eead4;font-size:48px;margin:10px 0 0 0;letter-spacing:2px}
+.sub{color:#5eead4;font-size:12px;letter-spacing:4px;margin:5px 0}
+.title{color:#5eead4;font-size:22px;margin:5px 0;font-weight:bold}
+.desc{color:#888;font-size:14px;max-width:400px;margin:10px auto}
+.email{background:#5eead4;color:#000;padding:12px 25px;border-radius:30px;display:inline-block;margin:15px 0;font-weight:bold;text-decoration:none}
+.card{background:#111;border:1px solid #222;border-radius:15px;padding:15px;text-align:left;max-width:400px;margin:15px auto}
+.card h2{color:#5eead4;font-size:18px;margin:0 0 8px 0}
+.card p{color:#aaa;font-size:13px;margin:0;line-height:1.5}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.tag{border:1px solid #333;border-radius:20px;padding:5px 12px;color:#5eead4;font-size:12px}
+.mision{font-size:13px;margin:7px 0}
+.techada{color:#888;text-decoration:line-through}
+.enprogreso{color:#ccc}
 </style>
 </head>
 <body>
-<img src="IMG-20260723-WA8580.jpg" class="logo">
-<div style="color:#3ff6e0;font-size:11px;letter-spacing:3px">MONTE ESCOBEDO - ZACATECAS</div>
+
+<div class="logo-box">
+<img src="https://i.ibb.co/..." alt="ROMAN LOGO">
+<!-- Usa tu imagen del vaquero neón aquí -->
+<div style="font-size:40px">🤠</div>
+<p style="color:#5eead4;letter-spacing:3px">ROMAN<br>- PREDICADOR PROGRAMADOR -<br><span style="font-size:10px">MONTE ESCOBEDO</span></p>
+</div>
+
+<p class="sub">MONTE ESCOBEDO - ZACATECAS</p>
 <h1>ROMAN</h1>
-<div style="color:#3ff6e0;font-weight:bold;font-size:18px">PROGRAMADOR VAQUERO</div>
-<p style="color:#888;margin-top:10px">Escribiendo código. Cabalgando el Oeste.<br>Desde Zacatecas para el mundo.</p>
-<button class="btn">roman@roman.dev</button>
+<p class="title">PROGRAMADOR VAQUERO</p>
+<p class="desc">Escribiendo código. Cabalgando el Oeste. Desde Zacatecas para el mundo.</p>
+
+<a class="email" href="mailto:roman@roman.dev">roman@roman.dev</a>
+
 <div class="card">
-<h3 style="color:#3ff6e0">SOBRE MI</h3>
-<p style="color:#aaa;font-size:13px;margin-top:8px">Vaquero de Monte Escobedo, Zacatecas. JavaScript, Rust, Python. Junto el rancho con la tecnología.</p>
+<h2>SOBRE MI</h2>
+<p>Vaquero de Monte Escobedo, Zacatecas. JavaScript, Rust, Python. Junto el rancho con la tecnología.</p>
 </div>
+
 <div class="card">
-<h3 style="color:#3ff6e0">STACK</h3>
-<div style="margin-top:10px"><span class="tag">JavaScript</span><span class="tag">Rust</span><span class="tag">Python</span><span class="tag">React</span><span class="tag">Node.js</span></div>
+<h2>STACK</h2>
+<div class="tags">
+<span class="tag">JavaScript</span>
+<span class="tag">Rust</span>
+<span class="tag">Python</span>
+<span class="tag">React</span>
+<span class="tag">Node.js</span>
 </div>
+</div>
+
+<!-- NUEVA SECCION QUE LE AGREGAMOS -->
+<div class="card" style="border:1px solid #5eead4;box-shadow:0 0 15px #5eead422">
+<h2>🎯 MIS MISIONES</h2>
+<p class="mision techada">✅ 📚 Estudiar para ser programador - TECHADA - 24 Julio 2026</p>
+<p class="mision enprogreso">🔜 🏆 Ser de los mejores - En progreso</p>
+<p class="mision enprogreso">🔜 🤝 Ayudar a las personas con código</p>
+<p style="color:#5eead4;font-size:11px;margin-top:12px">Desde Monte Escobedo para el mundo. 🤠💻</p>
+</div>
+
 </body>
 </html>
