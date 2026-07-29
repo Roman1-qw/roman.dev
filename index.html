@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ROMAN.DEV</title>
-<style>
-body{background:#000;color:#fff;font-family:monospace;text-align:center;padding:20px;margin:0}
-.logo-box{border:1px solid #5eead4;border-radius:25px;padding:15px;box-shadow:0 0 25px #5eead455;max-width:420px;margin:auto;background:#000}
-.logo-box img{width:100%;border-radius:20px;display:block}
-h1{color:#5eead4;font-size:48px;margin:15px 0 0 0;letter-spacing:2px}
-.sub{color:#5eead4;font-size:12px;letter-spacing:4px;margin:5px 0}
-.title{color:#5eead4;font-size:22px;margin:5px 0;font-weight:bold}
-.desc{color:#888;font-size:14px;max-width:400px;margin:10px auto}
-.email{background:#5eead4;color:#000;padding:12px 25px;border-radius:30px;display:inline-block;margin:15px 0;font-weight:bold;text-decoration:none}
-.card{background:#111;border:1px solid #222;border-radius:15px;padding:15px;text-align:left;max-width:420px;margin:15px auto}
-.card h2{color:#5eead4;font-size:18px;margin:0 0 8px 0}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROMAN - Programador Vaquero</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'JetBrains Mono', monospace; background: #0A0A0A; }
+  </style>
 </head>
-<body>
+<body class="bg-[#0A0A0A] text-gray-200 min-h-screen">
 
-<div class="logo-box">
-<img src="./IMG-20260723-WA8580.jpg" alt="ROMAN LOGO">
-</div>
+  <!-- HEADER -->
+  <header class="p-6 md:p-10 flex flex-col items-center text-center">
+    <!-- LOGO NUEVO AMBAR -->
+    <img src="IMG-20260729-WA1256.jpg" 
+         alt="Roman Logo" 
+         class="w-72 h-72 md:w-80 md:h-80 object-contain rounded-2xl shadow-[0_0_30px_rgba(245,158,11,0.3)] mb-6">
+    
+    <h1 class="text-5xl md:text-6xl font-black text-[#F59E0B] tracking-tighter">ROMAN</h1>
+    <p class="text-[#F59E0B]/70 mt-2 tracking-[0.3em] text-sm">- PROGRAMADOR VAQUERO -</p>
+    <p class="text-gray-500 text-xs tracking-[0.2em] mt-1">MONTE ESCOBEDO, ZACATECAS</p>
+  </header>
 
-<p class="sub">MONTE ESCOBEDO - ZACATECAS</p>
-<h1>ROMAN</h1>
-<p class="title">PROGRAMADOR VAQUERO</p>
-<p class="desc">Escribiendo código. Cabalgando el Oeste. Desde Zacatecas para el mundo.</p>
+  <!-- MAIN -->
+  <main class="max-w-5xl mx-auto px-6 pb-20">
+    <!-- BANNER -->
+    <div class="bg-[#141414] border border-[#262626] rounded-lg p-4 flex items-center justify-between mb-8">
+      <span class="text-sm">Disponible para nuevos proyectos</span>
+      <span class="text-xs bg-[#F59E0B]/20 text-[#F59E0B] border border-[#F59E0B]/30 px-3 py-1 rounded-full">● En línea</span>
+    </div>
 
-<a class="email" href="mailto:roman@roman.dev">roman@roman.dev</a>
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- CARD QUIEN SOY -->
+      <div class="bg-[#141414] border border-[#262626] rounded-xl p-6">
+        <h2 class="text-[#F59E0B] font-bold mb-4">> QUIÉN SOY</h2>
+        <p class="text-sm text-gray-400 leading-relaxed">
+          Programador Vaquero desde Monte Escobedo. Código limpio, ideas claras y soluciones que jalan en el rancho y en la nube.
+        </p>
+        <div class="flex gap-2 mt-6 flex-wrap">
+          <span class="text-xs bg-[#1F1F1F] border border-[#2A2A2A] px-3 py-1 rounded">JavaScript</span>
+          <span class="text-xs bg-[#1F1F1F] border border-[#2A2A2A] px-3 py-1 rounded">Rust</span>
+          <span class="text-xs bg-[#1F1F1F] border border-[#2A2A2A] px-3 py-1 rounded">Python</span>
+          <span class="text-xs bg-[#F59E0B]/10 border border-[#F59E0B]/20 text-[#F59E0B] px-3 py-1 rounded">React</span>
+        </div>
+      </div>
 
-<div class="card">
-<h2>SOBRE MI</h2>
-<p style="color:#aaa;font-size:13px;margin:0">Vaquero de Monte Escobedo, Zacatecas. JavaScript, Rust, Python. Junto el rancho con la tecnología.</p>
-</div>
+      <!-- CARD MISIONES -->
+      <div class="bg-[#141414] border border-[#F59E0B]/30 rounded-xl p-6 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
+        <h2 class="text-[#F59E0B] font-bold mb-4">> MIS MISIONES</h2>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-2"><span class="text-[#F59E0B]">▸</span> Desarrollo Web que no se cae</li>
+          <li class="flex items-start gap-2"><span class="text-[#F59E0B]">▸</span> Automatización pa' ahorrar tiempo</li>
+          <li class="flex items-start gap-2"><span class="text-[#F59E0B]">▸</span> Ideas raras que funcionan</li>
+        </ul>
+      </div>
+    </div>
 
-<div class="card">
-<h2>STACK</h2>
-<p style="color:#aaa;font-size:13px">JavaScript • Rust • Python • React • Node.js</p>
-</div>
-
-<div class="card" style="border:1px solid #5eead4;box-shadow:0 0 15px #5eead422">
-<h2>🎯 MIS MISIONES</h2>
-<p style="color:#888;font-size:13px;margin:6px 0;text-decoration:line-through">✅ 📚 Estudiar para ser programador - TECHADA</p>
-<p style="color:#ccc;font-size:13px;margin:6px 0">🔜 🏆 Ser de los mejores - En progreso</p>
-<p style="color:#ccc;font-size:13px;margin:6px 0">🔜 🤝 Ayudar a las personas con código</p>
-</div>
+    <!-- BOTON CONTACTO -->
+    <div class="mt-10 flex justify-center">
+      <a href="mailto:roman@roman.dev" class="bg-[#F59E0B] text-black font-black px-10 py-4 rounded-lg shadow-[0_0_20px_rgba(245,158,11,0.4)] hover:bg-[#FBBF24] hover:shadow-[0_0_30px_rgba(245,158,11,0.6)] transition-all">
+        roman@roman.dev
+      </a>
+    </div>
+  </main>
 
 </body>
 </html>
